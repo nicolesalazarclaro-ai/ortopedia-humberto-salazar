@@ -1,6 +1,6 @@
 # Propuesta: alojamiento web y dominio
 
-Fecha: 24 de noviembre de 2026 · Estado: propuesta, **nada contratado ni registrado**.
+Fecha: 24 de noviembre de 2026 · Estado: **aprobada por Nicole el 24/11/2026**; nada contratado ni registrado aún.
 
 ## Recomendación
 

@@ -11,6 +11,6 @@
 - [ ] Política de privacidad y términos, revisados por abogado.
 
 ## Decisiones por aprobar
-- [ ] Hosting y dominio (docs/hosting-y-dominio.md).
+- [x] Hosting y dominio: aprobado. Seguir docs/guia-dominio-y-hosting.md.
 - [ ] Mejoras técnicas de la auditoría (docs/auditoria-v5.1.md).
 - [ ] Crear el repositorio en GitHub y autorizar el primer envío.
