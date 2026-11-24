@@ -60,7 +60,7 @@ este flujo se reemplaza.
 
 ## Técnica
 - Hoy: HTML estático autocontenido (CSS y JS en línea), imágenes en `sitio/img/`. Sin build.
-- Hosting propuesto: Cloudflare Pages, carpeta de salida `sitio/`. Rama `main` = producción.
+- Hosting: Vercel (elegido por Nicole), configurado en `vercel.json` con carpeta de salida `sitio/`. Rama `main` = producción; otras ramas generan vistas previas. `sitio/_headers` queda por si se vuelve a Cloudflare.
 - Futuro (al agregar páginas por producto o blog): migrar a Astro, con aprobación.
 - Sin dependencias ni servicios de pago nuevos sin justificación y aprobación.
 - Rendimiento: Lighthouse ≥ 90 en móvil; imágenes WebP/AVIF con `width`, `height` y `loading="lazy"`.
