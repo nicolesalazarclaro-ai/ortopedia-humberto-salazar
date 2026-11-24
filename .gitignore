@@ -1,0 +1,17 @@
+# Sistema
+.DS_Store
+Thumbs.db
+# Editores
+.vscode/
+.idea/
+# Dependencias y compilados
+node_modules/
+dist/
+.astro/
+# Secretos: nunca al repositorio
+.env
+.env.*
+!.env.example
+*.pem
+# Capturas de pruebas
+pruebas/capturas/

@@ -1,0 +1,4 @@
+# Sitio en etapa previa al lanzamiento: no indexar.
+# Al publicar (con aprobación) cambiar por "Allow: /" y agregar la línea Sitemap.
+User-agent: *
+Disallow: /

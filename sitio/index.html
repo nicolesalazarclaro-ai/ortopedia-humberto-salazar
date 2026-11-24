@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="es-CL">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Ortopedia Humberto Salazar | Fabricación a medida</title>
+<meta content="Corsés ortopédicos personalizados, plantillas, férulas para juanetes y calzado a medida. Taller familiar con más de 40 años de oficio. Cotiza por WhatsApp." name="description"/>
+<meta content="noindex, nofollow" name="robots"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Figtree:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+/* VOICE  humana, sobria, de oficio: un taller familiar que fabrica a medida, no una tienda de insumos
+   IDEA   el molde de patronaje del taller: papel cuadriculado, líneas de medida, costuras
+   PICTURE el molde de un corsé dibujado como plano técnico, con cinta de medir y cotas
+   COLOUR blanco, tinta casi negra, petróleo profundo en bandas, coral para el botón principal
+   TYPE   Fraunces (títulos) + Figtree (texto)
+   LAYOUT escritorio: titular y botón arriba a la izquierda, molde grande a la derecha; teléfono: titular, molde, botón */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#0f1416);
+--ink:light-dark(#16212a,#ecefee);
+--soft:light-dark(#4b5862,#a9b4b8);
+--line:light-dark(#dfe5e6,#25323a);
+--paper:light-dark(#f4f6f5,#151d21);
+--petrol:light-dark(#0e4a52,#0b3a41);
+--petrol-ink:#f2f7f6;
+--coral:light-dark(#d9573a,#ef7a5d);
+--coral-ink:light-dark(#ffffff,#1a0d08);
+--grid:light-dark(#dbe4e3,#1f2a2f);
+--pending:light-dark(#8a4b00,#ffc77a);
+--pending-bg:light-dark(#fff4e2,#2b2112)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Figtree,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:clip}
+img,svg{max-width:100%;display:block}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:500;line-height:1.08;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1{font-size:clamp(36px,5.2vw,58px)}
+h2{font-size:clamp(30px,3.6vw,44px)}
+h3{font-size:22px;letter-spacing:-.01em}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto}
+.band{padding-block:clamp(48px,7vw,104px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.lede{font-size:19px;color:var(--soft);max-width:36em}
+.pend{display:inline-block;background:var(--pending-bg);color:var(--pending);border:1px dashed currentColor;border-radius:6px;padding:1px 8px;font-size:14px;font-weight:600;line-height:1.5}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:999px;font:600 17px/1 Figtree,system-ui,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn svg{width:22px;height:22px;flex:none}
+.btn-wa{background:var(--coral);color:var(--coral-ink)}
+.btn-wa:hover{transform:translateY(-1px);background:color-mix(in srgb,var(--coral) 88%,#000)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+.btn-sm{min-height:44px;padding:0 18px;font-size:16px}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:8px;z-index:50}
+.skip:focus{left:16px}
+/* cabecera */
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:24px;min-height:68px;padding-inline:max(5vw,16px);max-width:1340px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.logo-mark{width:40px;height:40px;border-radius:50%;border:1.5px dashed var(--pending);color:var(--pending);display:grid;place-items:center;font:600 11px/1 Figtree,sans-serif;flex:none}
+.logo-name{font:500 19px/1.1 Fraunces,Georgia,serif;letter-spacing:-.01em}
+.logo-name small{display:block;font:500 13px/1.3 Figtree,sans-serif;color:var(--soft);letter-spacing:0}
+nav{display:flex;gap:22px}
+nav a{text-decoration:none;font-size:15px;font-weight:500;color:var(--soft);padding:10px 0}
+nav a:hover{color:var(--ink)}
+@media(max-width:960px){nav{display:none}}
+@media(max-width:480px){.bar .btn{display:none}}
+/* portada */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{margin-bottom:20px}
+.hero .lede{margin-bottom:32px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;padding-top:24px;border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
+.facts b{display:block;color:var(--ink);font:500 26px/1.1 Fraunces,Georgia,serif}
+.plan{background:var(--paper);border-radius:28px;padding:clamp(12px,2vw,24px);position:relative;overflow:hidden}
+.plan svg{width:100%;height:auto}
+.plan svg text{font-family:Figtree,system-ui,sans-serif;fill:var(--soft);font-size:15px;font-weight:500}
+.photo-slot{position:absolute;right:16px;bottom:16px;max-width:58%;background:var(--bg);border:1px dashed var(--pending);color:var(--pending);border-radius:14px;padding:10px 14px;font-size:13px;font-weight:600;line-height:1.35}
+@media(max-width:820px){.hero{grid-template-columns:minmax(0,1fr)}.photo-slot{position:static;max-width:none;margin-top:10px}}
+/* productos */
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:44px}
+.sec-head p{color:var(--soft)}
+@media(max-width:820px){.sec-head{grid-template-columns:minmax(0,1fr)}}
+.feature{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);background:var(--petrol);color:var(--petrol-ink);border-radius:28px;overflow:hidden;margin-bottom:20px}
+.feature-art{background:color-mix(in srgb,var(--petrol) 70%,#000);display:grid;place-items:center;padding:28px;min-height:320px;position:relative}
+.feature-art svg{width:min(320px,100%);height:auto}
+.feature-body{padding:clamp(28px,4vw,52px);display:flex;flex-direction:column;gap:18px;justify-content:center}
+.feature-body p{color:color-mix(in srgb,var(--petrol-ink) 82%,transparent)}
+.feature-body ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.feature-body li{display:flex;gap:12px;align-items:baseline}
+.feature-body li::before{content:"";width:14px;height:2px;background:var(--coral);flex:none;transform:translateY(-4px)}
+.tag{align-self:flex-start;font-size:14px;font-weight:600;padding:4px 12px;border-radius:999px;background:color-mix(in srgb,var(--petrol-ink) 14%,transparent)}
+.feature .pend{background:#fff4e2;color:#8a4b00}
+.feature .btn-wa{align-self:flex-start}
+@media(max-width:820px){.feature{grid-template-columns:minmax(0,1fr)}.feature-art{min-height:200px;padding:20px}.feature-art svg{width:200px}}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+@media(max-width:1060px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.cards{grid-template-columns:minmax(0,1fr)}}
+.card{border:1px solid var(--line);border-radius:22px;padding:24px;display:flex;flex-direction:column;gap:14px;background:var(--bg)}
+.card-icon{width:56px;height:56px;border-radius:16px;background:var(--paper);display:grid;place-items:center;color:var(--petrol)}
+:root[data-theme=dark] .card-icon{color:#7fc3c9}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]) .card-icon{color:#7fc3c9}}
+.card p{color:var(--soft);font-size:16px;flex:1}
+.card a.more{font-weight:600;font-size:16px;text-decoration:none;color:var(--coral);display:inline-flex;align-items:center;gap:8px;min-height:44px}
+.card a.more:hover{text-decoration:underline}
+/* pasos */
+.steps-band{background:var(--paper)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:s;list-style:none;margin:0;padding:0}
+@media(max-width:960px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.steps{grid-template-columns:minmax(0,1fr)}}
+.steps li{background:var(--bg);border-radius:22px;padding:26px;display:grid;gap:12px;align-content:start}
+.steps li::before{counter-increment:s;content:counter(s);font:500 44px/1 Fraunces,Georgia,serif;color:var(--coral)}
+.steps p{color:var(--soft);font-size:16px}
+.note{margin-top:28px;display:flex;gap:14px;align-items:flex-start;padding:18px 22px;border-radius:16px;border:1px solid var(--line);background:var(--bg);font-size:16px;color:var(--soft);max-width:58em}
+.note svg{flex:none;width:24px;height:24px;color:var(--petrol);margin-top:2px}
+/* taller */
+.workshop{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:220px 220px;gap:16px}
+.slot{border:1.5px dashed var(--pending);background:var(--pending-bg);color:var(--pending);border-radius:20px;display:grid;place-items:center;text-align:center;padding:18px;font-size:15px;font-weight:600}
+.slot.big{grid-row:span 2}
+@media(max-width:820px){.workshop{grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:auto}.slot{min-height:170px}.slot.big{grid-column:span 2;grid-row:auto;min-height:240px}}
+/* fundador */
+.founder{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.founder .slot{min-height:420px}
+.founder-text{display:grid;gap:20px}
+.founder-text p{color:var(--soft)}
+blockquote{margin:0;font:400 clamp(22px,2.4vw,28px)/1.35 Fraunces,Georgia,serif;color:var(--ink);padding-left:22px;border-left:2px solid var(--coral)}
+@media(max-width:820px){.founder{grid-template-columns:minmax(0,1fr)}.founder .slot{min-height:300px}}
+/* distancia */
+.remote{background:var(--petrol);color:var(--petrol-ink)}
+.remote-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px)}
+.remote p{color:color-mix(in srgb,var(--petrol-ink) 82%,transparent)}
+.remote-list{display:grid;gap:14px;margin:0;padding:0;list-style:none}
+.remote-list li{padding:18px 20px;border-radius:16px;background:color-mix(in srgb,var(--petrol-ink) 8%,transparent);display:grid;gap:4px}
+.remote-list b{font-weight:600;color:var(--petrol-ink)}
+.remote .pend{background:#fff4e2;color:#8a4b00}
+@media(max-width:820px){.remote-grid{grid-template-columns:minmax(0,1fr)}}
+/* preguntas */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px)}
+@media(max-width:820px){.faq-grid{grid-template-columns:minmax(0,1fr)}}
+details{border-bottom:1px solid var(--line)}
+details:first-child{border-top:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:20px 0;font-weight:600;font-size:18px;min-height:44px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font:400 28px/1 Fraunces,Georgia,serif;color:var(--coral);transition:transform .2s;flex:none}
+details[open] summary::after{transform:rotate(45deg)}
+details>div{padding:0 0 22px;color:var(--soft);display:grid;gap:10px}
+/* cierre */
+.final{text-align:left;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px;align-items:center;background:var(--paper);border-radius:28px;padding:clamp(28px,5vw,60px)}
+@media(max-width:820px){.final{grid-template-columns:minmax(0,1fr)}}
+footer{border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
+.foot{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+.foot h3{font:600 15px/1.4 Figtree,sans-serif;color:var(--ink);margin-bottom:10px;letter-spacing:0}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink);text-decoration:underline}
+.legal{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between}
+@media(max-width:820px){.foot{grid-template-columns:repeat(2,minmax(0,1fr))}.foot>div:first-child{grid-column:span 2}}
+/* botón flotante y aviso */
+.float{position:fixed;right:16px;bottom:16px;z-index:30;box-shadow:0 8px 24px rgba(0,0,0,.18);display:none}
+@media(max-width:820px){.float{display:inline-flex}body{padding-bottom:84px}}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:40;background:var(--ink);color:var(--bg);padding:14px 18px;border-radius:14px;font-size:15px;max-width:min(92vw,520px);transition:opacity .2s,transform .2s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.proto{background:var(--pending-bg);color:var(--pending);font-size:14px;font-weight:600;text-align:center;padding:8px 16px}
+.tape{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.2s .3s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media(prefers-reduced-motion:reduce){.tape{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}.btn{transition:none}}
+
+:root{color-scheme:light;--bg:#fff;--ink:#193344;--soft:#52636a;--line:#dce5e1;--paper:#f1f3f0;--petrol:#193344;--petrol-ink:#fff;--coral:#22724c;--coral-ink:#fff;--grid:#dce5e1;--pending:#52636a;--pending-bg:#edf2ef}
+.brand-top{letter-spacing:.32em!important;font-size:10px!important;margin-bottom:5px}.logo-name{font-family:Figtree,sans-serif;font-weight:600;letter-spacing:.04em;font-size:16px}.eyebrow{font-size:12px;letter-spacing:.18em;font-weight:600;color:#496557;margin-bottom:20px}.btn{border-radius:6px}.hero h1{font-size:clamp(42px,5.8vw,76px);letter-spacing:-.045em}.hero .btn-wa{background:#193344}.plan,.feature,.card,.slot,.steps li,.final{border-radius:8px}.plan{background:#edf2ef}.facts{border:0;background:#193344;color:#e4eeeb;padding:22px;border-radius:6px}.facts b{color:white}.card{padding:26px}.card-icon{border-radius:4px}.slot,.photo-slot,.pend{border:0;background:#edf2ef;color:#52636a}.photo-slot{font-weight:400}.feature-art{background:#263f4d}.band{padding-block:clamp(52px,7vw,100px)}.feature-body .btn-wa{background:#22724c}.mobile-menu{display:none}@media(max-width:960px){.mobile-menu{display:block;position:relative}.mobile-menu summary{font-size:15px;padding:8px}.mobile-menu div{position:absolute;right:0;top:100%;background:white;padding:16px;min-width:210px;box-shadow:0 8px 30px #19334422;display:grid;gap:12px}.mobile-menu a{text-decoration:none}}@media(max-width:480px){.logo-name{font-size:12px}.facts{gap:16px}.hero h1{font-size:44px}}
+
+/* Product image framing: preserve full product and consistent alignment */
+#productos .card-icon{width:100%;height:auto;aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#e9e3db;padding:8px;}
+#productos .card-icon img{display:block;width:100%;height:100%;max-width:100%;object-fit:contain;object-position:50% 50%;border-radius:0;}
+#productos .feature-art{display:flex;align-items:center;justify-content:center;background:#e9e3db;padding:24px;min-height:320px;}
+#productos .feature-art img{display:block;width:100%;height:auto;max-height:460px;object-fit:contain;object-position:center;}
+@media(max-width:560px){#productos .card-icon{aspect-ratio:4/3;}#productos .feature-art{min-height:0;padding:16px;}#productos .feature-art img{max-height:340px;}}
+</style>
+<style>html{color-scheme:light} .brand-image{width:230px;height:auto;mix-blend-mode:multiply}.plan{padding:0;overflow:hidden}.plan img{width:100%;height:clamp(300px,38vw,540px);object-fit:cover;object-position:58% center}.feature-art{padding:0;background:#e8e1d8}.feature-art img{width:100%;height:100%;max-height:520px;object-fit:contain}.card{padding:0;overflow:hidden;gap:12px}.card h3,.card p,.card a{margin-inline:20px}.card a{margin-bottom:16px}.card-icon{width:100%;height:230px;border-radius:0;background:#e8e1d8;overflow:hidden}.card-icon img{width:100%;height:100%;object-fit:cover}.slot{padding:0;overflow:hidden;display:block}.slot img{width:100%;height:100%;object-fit:cover}.founder .slot img{min-height:420px}.image-note{max-width:1240px;margin:12px auto 0;font-size:12px;color:#52636a}.hero .facts{background:#193344}.workshop{grid-template-rows:220px 220px}@media(max-width:820px){.workshop{grid-template-rows:auto}.slot img{height:220px}.slot.big img{height:280px}.founder .slot img{min-height:0;height:300px}.plan img{height:320px}}@media(max-width:480px){.brand-image{width:190px}.card-icon{height:280px}}</style><style>[data-field]:empty{display:none} details[data-optional]:not(:has(p:not(:empty))){display:none}</style></head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+<header>
+<div class="bar">
+<a aria-label="Ortopedia Humberto Salazar, inicio" class="logo" href="#inicio"><img alt="Ortopedia Humberto Salazar" class="brand-image" data-image="0" decoding="async" src="img/logo.webp" width="760" height="250" fetchpriority="high"/></a>
+<nav aria-label="Secciones">
+<a href="#productos">Productos</a>
+<a href="#como-trabajamos">Cómo trabajamos</a>
+<a href="#taller">El taller</a>
+<a href="#nosotros">Nosotros</a>
+<a href="#preguntas">Preguntas</a>
+</nav>
+<details class="mobile-menu"><summary>Menú</summary><div><a href="#productos">Productos</a><a href="#nosotros">Nuestra historia</a><a href="#como-trabajamos">Cómo trabajamos</a><a href="#preguntas">Preguntas frecuentes</a></div></details><a class="btn btn-wa btn-sm" data-wa="general" href="#">Cotizar por WhatsApp</a>
+</div>
+</header>
+<main id="contenido">
+<section class="band" id="inicio" style="padding-top:clamp(28px,4vw,56px)">
+<div class="wrap hero">
+<div>
+<div class="eyebrow">MÁS DE 40 AÑOS DE TRAYECTORIA</div><h1 data-field="Experiencia que se convierte en bienestar.">Experiencia que se convierte en bienestar.</h1>
+<p class="lede" data-field="Corsés y soluciones ortopédicas fabricadas a medida. Precisión, dedicación y experien">Corsés y soluciones ortopédicas fabricadas a medida. Precisión, dedicación y experiencia en cada detalle.</p>
+<div class="cta-row">
+<a class="btn btn-wa" data-wa="corse" href="#"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-wa"></use></svg>Cotizar por WhatsApp</a>
+<a class="btn btn-ghost" href="#nosotros">Conoce nuestra historia</a>
+</div>
+<div class="facts">
+<span><b data-field="+40 años">+40 años</b>de oficio ortopédico</span>
+<span><b data-field="Taller propio">Taller propio</b>fabricación a medida</span>
+<span><b data-field="Empresa familiar">Empresa familiar</b>atención directa</span>
+</div>
+</div>
+<div class="plan"><img alt="Imagen ilustrativa de fabricación de un corsé" class="" data-image="1" decoding="async" src="img/portada.webp" width="845" height="400" fetchpriority="high"/></div>
+</div>
+<p class="image-note">Imágenes ilustrativas generadas con IA; no representan fotografías del taller ni productos reales.</p></section>
+<section class="band" id="productos" style="padding-top:0">
+<div class="wrap">
+<div class="sec-head">
+<h2 data-field="Especialistas en soluciones ortopédicas">Especialistas en soluciones ortopédicas</h2>
+<p data-field="Cada producto se hace para una persona en particular. Escríbenos por WhatsApp y te or">Cada producto se hace para una persona en particular. Escríbenos por WhatsApp y te orientamos sobre qué necesitas para cotizar.</p>
+</div>
+<article class="feature" id="corses">
+<div class="feature-art"><img alt="Corsé ortopédico ilustrativo" class="" data-image="2" decoding="async" src="img/corse.webp" width="291" height="347" loading="lazy"/></div>
+<div class="feature-body">
+<span class="tag">Nuestra especialidad</span>
+<h2 data-field="Corsés ortopédicos personalizados">Corsés ortopédicos personalizados</h2>
+<p data-field="Diseñamos y fabricamos el corsé a partir de la indicación médica y de tus medidas tom">Diseñamos y fabricamos el corsé a partir de la indicación médica y de tus medidas tomadas una a una. Revisamos contigo el ajuste en la entrega.</p>
+<ul>
+<li>Fabricación propia en nuestro taller</li>
+<li>Toma de medidas personal</li>
+</ul>
+<p data-field="Precio opcional — Corsés ortopédicos personalizados"></p><a class="btn btn-wa" data-wa="corse" href="#"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-wa"></use></svg>Cotizar un corsé</a>
+</div>
+</article>
+<div class="cards">
+<article class="card">
+<div class="card-icon"><img alt="Imagen ilustrativa de plantillas" class="" data-image="3" decoding="async" src="img/plantillas.webp" width="267" height="347" loading="lazy"/></div>
+<h3 data-field="Plantillas ortopédicas">Plantillas ortopédicas</h3>
+<p data-field="Plantillas hechas según la forma de tu pie y la indicación que traigas.">Plantillas hechas según la forma de tu pie y la indicación que traigas.</p>
+<p data-field="Precio opcional — Plantillas ortopédicas"></p><a class="more" data-wa="plantillas" href="#">Cotizar plantillas →</a>
+</article>
+<article class="card">
+<div class="card-icon"><img alt="Imagen ilustrativa de ferula" class="" data-image="4" decoding="async" src="img/ferula.webp" width="245" height="347" loading="lazy"/></div>
+<h3 data-field="Férulas para juanetes">Férulas para juanetes</h3>
+<p data-field="Férulas a medida para el pie, fabricadas y ajustadas en el taller.">Férulas a medida para el pie, fabricadas y ajustadas en el taller.</p>
+<p data-field="Precio opcional — Férulas para juanetes"></p><a class="more" data-wa="ferulas" href="#">Cotizar férulas →</a>
+</article>
+<article class="card">
+<div class="card-icon"><img alt="Imagen ilustrativa de calzado" class="" data-image="5" decoding="async" src="img/calzado.webp" width="268" height="347" loading="lazy"/></div>
+<h3 data-field="Calzado ortopédico">Calzado ortopédico</h3>
+<p data-field="Calzado fabricado o adaptado a tus medidas y a tu indicación.">Calzado fabricado o adaptado a tus medidas y a tu indicación.</p>
+<p data-field="Precio opcional — Calzado ortopédico"></p><a class="more" data-wa="calzado" href="#">Cotizar calzado →</a>
+</article>
+<article class="card">
+<div class="card-icon"><img alt="Imagen ilustrativa de materiales" class="" data-image="6" decoding="async" src="img/otros.webp" width="311" height="281" loading="lazy"/></div>
+<h3 data-field="Otros productos a medida">Otros productos a medida</h3>
+<p data-field="¿Necesitas otra pieza ortopédica? Cuéntanos y vemos si podemos fabricarla.">¿Necesitas otra pieza ortopédica? Cuéntanos y vemos si podemos fabricarla.</p>
+<p data-field="Precio opcional — Otros productos a medida"></p><a class="more" data-wa="otros" href="#">Consultar →</a>
+</article>
+</div>
+</div>
+<p class="image-note">Imágenes ilustrativas generadas con IA; no representan fotografías del taller ni productos reales.</p></section>
+<section class="band steps-band" id="como-trabajamos">
+<div class="wrap">
+<div class="sec-head">
+<h2 data-field="Cómo trabajamos">Cómo trabajamos</h2>
+<p data-field="Un proceso simple y conversado, en cuatro pasos. Todo comienza con un mensaje por Wha">Un proceso simple y conversado, en cuatro pasos. Todo comienza con un mensaje por WhatsApp.</p>
+</div>
+<ol class="steps">
+<li><h3 data-field="Nos escribes">Nos escribes</h3><p data-field="Nos cuentas qué producto necesitas y desde qué comuna o ciudad nos escribes. Si tiene">Nos cuentas qué producto necesitas y desde qué comuna o ciudad nos escribes. Si tienes indicación médica, te explicamos cómo compartirla de forma privada.</p></li>
+<li><h3 data-field="Revisamos tu caso">Revisamos tu caso</h3><p data-field="Leemos la indicación y te explicamos qué corresponde fabricar, si se puede avanzar a ">Leemos la indicación y te explicamos qué corresponde fabricar, si se puede avanzar a distancia o si conviene venir al taller.</p></li>
+<li><h3 data-field="Tomamos tus medidas">Tomamos tus medidas</h3><p data-field="En el taller o, cuando el producto lo permite, con una guía a distancia paso a paso.">En el taller o, cuando el producto lo permite, con una guía a distancia paso a paso.</p></li>
+<li><h3 data-field="Fabricamos y ajustamos">Fabricamos y ajustamos</h3><p data-field="Hacemos tu pieza en nuestro taller y la revisamos contigo en la entrega.">Hacemos tu pieza en nuestro taller y la revisamos contigo en la entrega.</p></li>
+</ol>
+<div class="note">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
+<p>Tu indicación médica es información privada. Antes de que nos la envíes, te pediremos tu autorización por WhatsApp y te diremos para qué la usamos. No la pedimos en formularios de esta página. Más detalle en la <a href="#privacidad">política de privacidad</a>.</p>
+</div>
+</div>
+</section>
+<section class="band" id="taller">
+<div class="wrap">
+<div class="sec-head">
+<h2 data-field="Cada persona es única. Cada solución también.">Cada persona es única. Cada solución también.</h2>
+<p data-field="La precisión está en cada detalle. Conoce los materiales y el oficio detrás de la fab">La precisión está en cada detalle. Conoce los materiales y el oficio detrás de la fabricación personalizada.</p>
+</div>
+<div class="workshop">
+<div class="slot big"><img alt="Imagen ilustrativa del proceso ortopédico" class="" data-image="7" decoding="async" src="img/taller-1.webp" width="443" height="281" loading="lazy"/></div>
+<div class="slot"><img alt="Imagen ilustrativa del proceso ortopédico" class="" data-image="8" decoding="async" src="img/taller-2.webp" width="291" height="347" loading="lazy"/></div>
+<div class="slot"><img alt="Imagen ilustrativa del proceso ortopédico" class="" data-image="9" decoding="async" src="img/taller-3.webp" width="430" height="175" loading="lazy"/></div>
+<div class="slot"><img alt="Imagen ilustrativa del proceso ortopédico" class="" data-image="10" decoding="async" src="img/taller-4.webp" width="417" height="281" loading="lazy"/></div>
+<div class="slot"><img alt="Imagen ilustrativa del proceso ortopédico" class="" data-image="11" decoding="async" src="img/taller-5.webp" width="311" height="281" loading="lazy"/></div>
+</div>
+</div>
+<p class="image-note">Imágenes ilustrativas generadas con IA; no representan fotografías del taller ni productos reales.</p></section>
+<section class="band steps-band" id="nosotros">
+<div class="wrap founder">
+<div class="slot"><img alt="Herramientas de fabricación, imagen ilustrativa" class="" data-image="12" decoding="async" src="img/fundador.webp" width="417" height="281" loading="lazy"/></div>
+<div class="founder-text">
+<h2 data-field="Humberto Salazar, el oficio detrás de cada pieza">Humberto Salazar, el oficio detrás de cada pieza</h2>
+<p data-field="Más de 40 años dedicados a la fabricación ortopédica, con experiencia de trabajo en e">Más de 40 años dedicados a la fabricación ortopédica, con experiencia de trabajo en el ámbito hospitalario. Hoy es una empresa familiar que atiende de forma directa y cercana.</p>
+<p data-field="Trayectoria adicional del fundador"></p></div>
+</div>
+</section>
+<section class="band remote" id="distancia">
+<div class="wrap remote-grid">
+<div style="display:grid;gap:18px;align-content:start">
+<h2 data-field="¿No estás cerca del taller?">¿No estás cerca del taller?</h2>
+<p data-field="Algunos productos se pueden avanzar a distancia y otros necesitan una prueba presenci">Algunos productos se pueden avanzar a distancia y otros necesitan una prueba presencial. Te lo decimos con claridad desde el primer mensaje, antes de cotizar.</p>
+<a class="btn btn-wa" data-wa="distancia" href="#" style="align-self:start;justify-self:start"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-wa"></use></svg>Consultar por WhatsApp</a>
+</div>
+<ul class="remote-list">
+<li><b>Atención presencial</b><span data-field="Ciudad y comuna"></span></li>
+<li><b>Evaluación a distancia</b><span data-field="Atención a distancia">Según el producto y tu indicación. </span></li>
+<li><b>Envíos</b><span data-field="Envíos"></span></li>
+</ul>
+</div>
+</section>
+<section class="band" id="preguntas">
+<div class="wrap faq-grid">
+<div style="display:grid;gap:16px;align-content:start">
+<h2 data-field="Preguntas frecuentes">Preguntas frecuentes</h2>
+<p data-field="Si tu pregunta no está aquí, escríbenos por WhatsApp." style="color:var(--soft)">Si tu pregunta no está aquí, escríbenos por WhatsApp.</p>
+</div>
+<div>
+<details><summary data-field="¿Cuánto cuesta un corsé?">¿Cuánto cuesta un corsé?</summary><div><p data-field="Cada corsé se fabrica a medida, por eso el valor se entrega en la cotización, después">Cada corsé se fabrica a medida, por eso el valor se entrega en la cotización, después de revisar tu caso por WhatsApp.</p></div></details>
+<details data-optional=""><summary data-field="¿Necesito una indicación médica?">¿Necesito una indicación médica?</summary><div><p data-field="¿Necesito una indicación médica?"></p></div></details><details data-optional=""><summary data-field="¿Cuánto demora la fabricación?">¿Cuánto demora la fabricación?</summary><div><p data-field="¿Cuánto demora la fabricación?"></p></div></details><details data-optional=""><summary data-field="¿Qué formas de pago aceptan?">¿Qué formas de pago aceptan?</summary><div><p data-field="¿Qué formas de pago aceptan?"></p></div></details><details data-optional=""><summary data-field="¿Realizan envíos?">¿Realizan envíos?</summary><div><p data-field="¿Realizan envíos?"></p></div></details><details data-optional=""><summary data-field="¿Trabajan con Fonasa o isapres?">¿Trabajan con Fonasa o isapres?</summary><div><p data-field="¿Trabajan con Fonasa o isapres?"></p></div></details></div>
+</div>
+</section>
+<section class="band" style="padding-top:0">
+<div class="wrap final">
+<div style="display:grid;gap:12px">
+<h2 data-field="Conversemos sobre lo que necesitas">Conversemos sobre lo que necesitas</h2>
+<p class="lede" data-field="Escríbenos por WhatsApp. Te responde nuestro equipo familiar.">Escríbenos por WhatsApp. Te responde nuestro equipo familiar.</p>
+</div>
+<a class="btn btn-wa" data-wa="general" href="#"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-wa"></use></svg>Cotizar por WhatsApp</a>
+</div>
+</section>
+</main>
+<footer class="band">
+<div class="wrap">
+<div class="foot">
+<div>
+<p class="logo-name" data-field="Ortopedia Humberto Salazar" style="margin-bottom:10px">Ortopedia Humberto Salazar</p>
+<p data-field="Taller familiar de fabricación ortopédica a medida.">Taller familiar de fabricación ortopédica a medida.</p>
+</div>
+<div>
+<h3>Contacto</h3>
+<ul>
+<li data-field="WhatsApp"></li><li data-field="Correo"></li><li data-field="Instagram"></li><li data-field="Facebook"></li></ul>
+</div>
+<div>
+<h3>Taller</h3>
+<ul>
+<li data-field="Dirección"></li><li data-field="Horario"></li></ul>
+</div>
+<div>
+<h3>Información</h3>
+<ul>
+<li data-field="Medios de pago"></li><li data-field="Razón social y RUT"></li><li data-field="Política de privacidad"></li><li data-field="Términos y condiciones"></li></ul>
+</div>
+</div>
+<div class="legal">
+<span>© <span id="yr">2026</span> Ortopedia Humberto Salazar </span>
+<span>Esta página no reemplaza la evaluación de un profesional de la salud.</span>
+</div>
+</div>
+</footer>
+<a aria-label="Cotizar por WhatsApp" class="btn btn-wa float" data-wa="general" href="#"><svg aria-hidden="true" viewbox="0 0 24 24"><use href="#i-wa"></use></svg>Cotizar</a>
+<div aria-live="polite" class="toast" id="toast" role="status"></div>
+<svg aria-hidden="true" height="0" style="position:absolute" width="0">
+<symbol id="i-wa" viewbox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z" fill="currentColor"></path></symbol>
+</svg>
+<script>
+{
+  // Número de WhatsApp Business en formato internacional sin "+" ni espacios, por ejemplo 569XXXXXXXX.
+  // [PENDIENTE: número oficial de la empresa]. Mientras esté vacío, los botones muestran un aviso.
+  const WA_NUMBER = document.documentElement.dataset.whatsapp || '';
+
+  // Mensajes prellenados por producto: hablan del producto, nunca de condiciones de salud.
+  const MSG = {
+    general: 'Hola, quiero cotizar un producto ortopédico a medida.',
+    corse: 'Hola, quiero cotizar un corsé ortopédico personalizado.',
+    plantillas: 'Hola, quiero cotizar plantillas ortopédicas.',
+    ferulas: 'Hola, quiero cotizar una férula para juanetes.',
+    calzado: 'Hola, quiero cotizar calzado ortopédico.',
+    otros: 'Hola, quiero consultar por un producto ortopédico a medida.',
+    distancia: 'Hola, no estoy cerca del taller y quiero saber si pueden atenderme.'
+  };
+
+  const toast = document.getElementById('toast');
+  let tId = 0;
+  const show = (t) => {
+    toast.textContent = t;
+    toast.classList.add('on');
+    clearTimeout(tId);
+    tId = setTimeout(() => toast.classList.remove('on'), 4200);
+  };
+
+  for (const a of document.querySelectorAll('[data-wa]')) {
+    const text = MSG[a.dataset.wa] || MSG.general;
+    if (WA_NUMBER) {
+      a.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(text);
+      a.target = '_blank';
+      a.rel = 'noopener';
+    } else {
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        show('Número de WhatsApp pendiente. Este botón abrirá el chat con el mensaje: "' + text + '"');
+      });
+    }
+  }
+
+  for (const a of document.querySelectorAll('a[href="#privacidad"],a[href="#terminos"]')) {
+    a.addEventListener('click', (e) => {
+      e.preventDefault();
+      show('Texto legal pendiente de redactar y de revisión por un abogado.');
+    });
+  }
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+}
+</script>
+</body>
+</html>
