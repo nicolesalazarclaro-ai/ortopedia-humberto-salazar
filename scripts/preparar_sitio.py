@@ -4,6 +4,7 @@ Qué hace (sin cambiar textos ni diseño):
 1. Extrae las 13 imágenes incrustadas en base64 a sitio/img/*.webp.
 2. Agrega width/height y loading="lazy" (excepto logo y portada).
 3. Quita el editor local ("Editar página"), que no debe publicarse.
+4. Enlaza medicion.js (píxel de Meta, apagado hasta tener aviso de cookies).
 
 Uso: python3 -I scripts/preparar_sitio.py fuente/Ortopedia_Salazar_V5_1_Editable.html sitio
 """
@@ -42,6 +43,8 @@ def main(fuente, salida):
     html, n = re.subn(r'<img\b[^>]*data-image="\d+"[^>]*>', reemplazar, html)
     html, e = re.subn(r'<div id="local-editor">.*?</script>', "", html, flags=re.S)
     assert "base64," not in html, "quedaron imágenes incrustadas"
+    if "medicion.js" not in html:
+        html = html.replace("</body>", '<script src="medicion.js" defer></script>\n</body>', 1)
     (out / "index.html").write_text(html, encoding="utf-8")
     print(f"{n} imágenes extraídas; editor eliminado: {bool(e)}; {len(html)//1024} KB")
 
