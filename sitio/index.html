@@ -274,7 +274,7 @@ footer{border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
 </ol>
 <div class="note">
 <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect height="11" rx="2" width="16" x="4" y="10"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg>
-<p>Tu indicación médica es información privada. Antes de que nos la envíes, te pediremos tu autorización por WhatsApp y te diremos para qué la usamos. No la pedimos en formularios de esta página. Más detalle en la <a href="#privacidad">política de privacidad</a>.</p>
+<p>Tu indicación médica es información privada. Antes de que nos la envíes, te pediremos tu autorización por WhatsApp y te diremos para qué la usamos. No la pedimos en formularios de esta página. Más detalle en la <a href="privacidad.html">política de privacidad</a>.</p>
 </div>
 </div>
 </section>
@@ -357,7 +357,7 @@ footer{border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
 <div>
 <h3>Información</h3>
 <ul>
-<li data-field="Medios de pago"></li><li data-field="Razón social y RUT"></li><li data-field="Política de privacidad"></li><li data-field="Términos y condiciones"></li></ul>
+<li data-field="Medios de pago"></li><li data-field="Razón social y RUT"></li><li data-field="Política de privacidad"><a href="privacidad.html">Política de privacidad</a></li><li data-field="Términos y condiciones"></li></ul>
 </div>
 </div>
 <div class="legal">
@@ -411,7 +411,7 @@ footer{border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
     }
   }
 
-  for (const a of document.querySelectorAll('a[href="#privacidad"],a[href="#terminos"]')) {
+  for (const a of document.querySelectorAll('a[href="#terminos"]')) {
     a.addEventListener('click', (e) => {
       e.preventDefault();
       show('Texto legal pendiente de redactar y de revisión por un abogado.');
