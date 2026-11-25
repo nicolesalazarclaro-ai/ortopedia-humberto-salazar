@@ -26,6 +26,8 @@
     s.async = true;
     s.src = 'https://connect.facebook.net/en_US/fbevents.js';
     document.head.appendChild(s);
+    // Sin eventos automáticos de Meta (texto de botones, descripción de la página): solo lo nuestro.
+    fbq('set', 'autoConfig', false, PIXEL_ID);
     fbq('init', PIXEL_ID);
     fbq('track', 'PageView');
     for (const a of document.querySelectorAll('[data-wa]')) {
