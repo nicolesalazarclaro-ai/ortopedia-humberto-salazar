@@ -1,0 +1,55 @@
+name: Publicar en Instagram
+
+# Publica solo piezas aprobadas por Nicole cuya fecha ya venció (hora de Chile).
+# El registro de lo publicado vive en la rama `registro-publicaciones`, no en main.
+# Secretos requeridos del repositorio: IG_ACCESS_TOKEN e IG_USER_ID. Nunca en archivos.
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+    inputs:
+      publicar:
+        description: "true publica de verdad; false es ensayo"
+        default: "false"
+
+concurrency:
+  group: instagram
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar registro de publicadas
+        run: |
+          git fetch origin registro-publicaciones || true
+          if git rev-parse --verify origin/registro-publicaciones >/dev/null 2>&1; then
+            git worktree add registro origin/registro-publicaciones
+          else
+            git worktree add --detach registro
+            (cd registro && git checkout --orphan registro-publicaciones && git rm -rf . >/dev/null && echo '{}' > estado.json)
+          fi
+      - name: Validar cola
+        run: python3 -I instagram/publicador.py validar
+      - name: Publicar lo vencido
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          PUBLICAR: ${{ github.event_name == 'schedule' && 'true' || inputs.publicar }}
+        run: |
+          if [ "$PUBLICAR" = "true" ]; then
+            python3 -I instagram/publicador.py ejecutar --publicar --estado registro/estado.json
+          else
+            python3 -I instagram/publicador.py ejecutar --estado registro/estado.json
+          fi
+      - name: Guardar registro
+        run: |
+          cd registro
+          git config user.name "registro-publicaciones"
+          git config user.email "noreply@users.noreply.github.com"
+          git add estado.json
+          git diff --cached --quiet || { git commit -m "Actualiza registro de publicaciones" && git push origin HEAD:registro-publicaciones; }

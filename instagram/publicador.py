@@ -180,8 +180,27 @@ def publicar_en_instagram(p, ig_id, token, llamar=llamar, espera=lambda s: time.
     return llamar("POST", f"{ig_id}/media_publish", {"creation_id": cont}, token)["id"]
 
 
-def ejecutar(ruta, publicar, llamar_api=llamar, ahora_fn=ahora, espera=lambda s: time.sleep(s)):
+CAMPOS_ESTADO = ("estado", "media_id", "publicada_en", "error")
+
+
+def aplicar_estado(datos, ruta_estado):
+    """Superpone el registro de publicadas (archivo aparte, en otra rama) sobre la cola."""
+    reg = json.loads(Path(ruta_estado).read_text(encoding="utf-8")) if ruta_estado and Path(ruta_estado).exists() else {}
+    for p in datos["piezas"]:
+        p.update(reg.get(p["id"], {}))
+    return reg
+
+
+def ejecutar(ruta, publicar, llamar_api=llamar, ahora_fn=ahora, espera=lambda s: time.sleep(s), ruta_estado=None):
     datos = cargar(ruta)
+    registro = aplicar_estado(datos, ruta_estado)
+
+    def persistir(p):
+        if ruta_estado:
+            registro[p["id"]] = {k: p[k] for k in CAMPOS_ESTADO if k in p}
+            Path(ruta_estado).write_text(json.dumps(registro, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        else:
+            guardar(ruta, datos)
     token, ig_id = os.environ.get("IG_ACCESS_TOKEN"), os.environ.get("IG_USER_ID")
     if publicar and not (token and ig_id):
         raise SystemExit("Faltan las variables de entorno IG_ACCESS_TOKEN e IG_USER_ID.")
@@ -213,7 +232,7 @@ def ejecutar(ruta, publicar, llamar_api=llamar, ahora_fn=ahora, espera=lambda s:
         except Exception as e:  # no reintenta solo: evita duplicados
             p["estado"], p["error"] = "error", str(e)[:500]
             print(f"[{p['id']}] ERROR: {e}")
-        guardar(ruta, datos)
+        persistir(p)
     return hechas
 
 
@@ -221,6 +240,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("accion", choices=["validar", "estado", "ejecutar"])
     ap.add_argument("--cola", default=str(COLA_POR_DEFECTO))
+    ap.add_argument("--estado", help="archivo JSON con el registro de publicadas (si se omite, se escribe en la cola)")
     ap.add_argument("--publicar", action="store_true", help="publica de verdad (sin esto es ensayo)")
     a = ap.parse_args(argv)
     if a.accion == "validar":
@@ -235,7 +255,7 @@ def main(argv=None):
         for p in cargar(a.cola)["piezas"]:
             print(f"{p['id']:<24} {p['estado']:<10} {p.get('fecha_programada', '-')}")
         return 0
-    ejecutar(a.cola, a.publicar)
+    ejecutar(a.cola, a.publicar, ruta_estado=a.estado)
     return 0
 
 

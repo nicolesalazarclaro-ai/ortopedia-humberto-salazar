@@ -72,6 +72,24 @@ class Flujo(unittest.TestCase):
         p = pb.cargar(self.ruta)["piezas"][0]
         self.assertEqual((p["estado"], p["media_id"]), ("publicada", "M1"))
 
+    def test_registro_aparte_no_toca_la_cola(self):
+        self._cola()
+        import os
+        os.environ.update(IG_ACCESS_TOKEN="x", IG_USER_ID="1")
+        def falso(m, ruta, params, token):
+            if ruta.endswith("content_publishing_limit"): return {"data": [{"quota_usage": 0}]}
+            if ruta.endswith("/media"): return {"id": "C1"}
+            if ruta == "C1": return {"status_code": "FINISHED"}
+            return {"id": "M1"}
+        est = Path(self.d) / "estado.json"
+        ahora = lambda: datetime(2027, 1, 1, tzinfo=pb.TZ_CHILE)
+        antes = self.ruta.read_text()
+        self.assertEqual(pb.ejecutar(self.ruta, True, falso, ahora, lambda s: None, est), 1)
+        self.assertEqual(self.ruta.read_text(), antes)
+        self.assertEqual(json.loads(est.read_text())["t1"]["media_id"], "M1")
+        # segunda corrida: no duplica
+        self.assertEqual(pb.ejecutar(self.ruta, True, falso, ahora, lambda s: None, est), 0)
+
     def test_no_publica_antes_de_la_hora(self):
         self._cola()
         import os
