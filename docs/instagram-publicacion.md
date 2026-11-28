@@ -1,7 +1,6 @@
 # Publicación programada en Instagram (Graph API)
 
-Cuenta: @ortopedia.humberto.salazar (id 17841445590397589), vinculada a la página de Facebook 1502713056255317, portafolio 1814675739770277. App de Meta: "Ortopedia HS Mensajes" (id 1537213269465741).
-Nota: el traspaso escribe el usuario como `@ortopedia.humbertosalazar` (sin el segundo punto). Nicole debe confirmar cuál es el correcto.
+Cuenta: @ortopedia.humbertosalazar (id 17841445590397589), vinculada a la página de Facebook 1502713056255317, portafolio 1814675739770277. App de Meta: "Ortopedia HS Mensajes" (id 1537213269465741).
 
 ## 1. Qué exige Meta (a revisar con la documentación vigente al momento de conectar)
 - **Cuenta profesional** de Instagram (Empresa o Creador), vinculada a la página. Ya lo está.
