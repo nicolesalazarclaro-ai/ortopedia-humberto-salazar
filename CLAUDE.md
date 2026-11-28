@@ -54,7 +54,7 @@ este flujo se reemplaza.
 - Las indicaciones médicas son datos sensibles. No crear formularios web que las reciban sin
   aprobación, base legal y almacenamiento cifrado definido. Hoy se comparten solo por WhatsApp,
   previa autorización explícita.
-- Nunca enviar datos de salud a Meta, Google u otras plataformas (ni en eventos, URLs ni parámetros).
+- Nunca enviar datos de salud a Meta, Google u otras plataformas (ni en eventos, URLs ni parámetros). Excepción aprobada por Nicole (28-nov-2026): el agente de WhatsApp (`agente/`) puede recibir datos de salud mínimos por ese canal, solo tras aviso y consentimiento, y se procesan con la API de Claude. Sin eventos de píxel ni analítica con datos de salud.
 - Píxel de Meta y analítica: solo con consentimiento de cookies. Medir el clic en WhatsApp por producto, nada más.
 - Sin secretos en el repositorio: usar variables de entorno del hosting. `.env` está en `.gitignore`.
 

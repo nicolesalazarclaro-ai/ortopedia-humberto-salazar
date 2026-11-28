@@ -7,3 +7,4 @@
 | 24/11/2026 | Repositorio con `sitio/` (publicable) generado desde `fuente/` (editable). | Propuesta |
 | 24/11/2026 | Mantener HTML estático por ahora; migrar a Astro al sumar páginas por producto o blog (antes decía Astro desde el inicio). | Propuesta |
 | 24/11/2026 | Dominio `ortopediahumbertosalazar.cl` en NIC Chile. Hosting: primero se aprobó Cloudflare Pages; luego Nicole eligió Vercel (configurado en `vercel.json`). | Aprobada por Nicole |
+| 28/11/2026 | Construir webhook y agente IA de WhatsApp (Claude) en `agente/`; datos de salud mínimos permitidos por WhatsApp con aviso y consentimiento. Despliegue y hosting pendientes de aprobación. | Aprobada por Nicole (código); despliegue pendiente |
