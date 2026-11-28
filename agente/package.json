@@ -1,0 +1,12 @@
+{
+  "name": "agente-whatsapp-ortopedia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Webhook y agente IA de WhatsApp para Ortopedia Humberto Salazar. Sin dependencias externas.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node servidor.js",
+    "test": "node --test pruebas/*.test.js"
+  }
+}

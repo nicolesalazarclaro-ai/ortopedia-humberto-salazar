@@ -10,6 +10,8 @@ de fabricación ortopédica a medida con más de 40 años de trayectoria.
 - `fuente/`: HTML editable aprobado, con editor local. Fuente del contenido.
 - `scripts/preparar_sitio.py`: genera `sitio/` desde `fuente/`.
 - `pruebas/revisar.js`: revisión automática en navegador.
+- `agente/`: webhook y agente IA de WhatsApp (Node, sin dependencias). Ver `docs/agente-whatsapp.md`.
+- `ESTADO-ACTUAL.md`: estado y pendientes.
 - `docs/`: auditoría, propuesta de hosting y dominio, decisiones y pendientes.
 - `CLAUDE.md`: reglas del proyecto (contenido, privacidad, aprobaciones, técnica).
 
