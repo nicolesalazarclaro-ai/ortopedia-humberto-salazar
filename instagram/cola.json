@@ -5,81 +5,85 @@
       "id": "borrador-001-taller",
       "estado": "borrador",
       "tipo": "IMAGEN",
-      "gancho": "Más de 40 años haciendo ortopedia a mano.",
-      "titulo": "Un taller familiar, desde Humberto Salazar",
-      "texto": "Somos una empresa familiar chilena que fabrica productos ortopédicos a medida, con experiencia en el ámbito hospitalario. Escríbenos por WhatsApp y cotiza el tuyo.",
+      "gancho": "Hay cosas que no se apuran. Un buen producto ortopédico es una de ellas.",
+      "titulo": "Más de 40 años haciendo ortopedia a mano",
+      "texto": "En nuestro taller familiar cada pieza se trabaja con calma, oficio y experiencia en el ámbito hospitalario.\n\nPorque lo hecho a medida no se parece a lo de góndola: se piensa para una sola persona.\n\n+ de 40 años de experiencia nos respaldan. Y empezó con Humberto Salazar.\n\n👉 ¿Buscas algo hecho a tu medida? Escríbenos por WhatsApp y cotiza.\n\nImagen ilustrativa.",
       "hashtags": [
         "OrtopediaChile",
         "TallerFamiliar",
-        "HechoAMedida"
+        "HechoAMedida",
+        "OrtopediaHumbertoSalazar"
       ],
       "imagenes": [
         "https://[PENDIENTE: dominio público]/instagram/borrador-001-taller.jpg"
       ],
-      "imagen_real": true,
-      "imagen_ilustrativa": false,
+      "imagen_real": false,
+      "imagen_ilustrativa": true,
       "idea_visual": "Foto real del taller o de las manos trabajando (la entrega Nicole). Sin pacientes.",
-      "fecha_programada": null
+      "fecha_programada": "2026-11-28 12:30"
     },
     {
       "id": "borrador-002-corse",
       "estado": "borrador",
       "tipo": "IMAGEN",
-      "gancho": "Cada corsé se fabrica pensando en una sola persona.",
+      "gancho": "Tu cuerpo no es una talla estándar. Tu corsé tampoco debería serlo.",
       "titulo": "Corsés ortopédicos personalizados",
-      "texto": "Nuestro producto estrella se hace a medida, con indicación de un profesional. Cuéntanos qué producto buscas y te cotizamos por WhatsApp.",
+      "texto": "Nuestro producto estrella se fabrica a medida, con la indicación de tu profesional de la salud y con el oficio de un taller que lleva + de 40 años de experiencia.\n\nUna sola persona. Una sola medida. Un corsé pensado para ti.\n\n👉 Cuéntanos qué producto buscas y te cotizamos por WhatsApp.\n\nImagen ilustrativa.",
       "hashtags": [
         "CorsesOrtopedicos",
         "OrtopediaChile",
-        "HechoAMedida"
+        "HechoAMedida",
+        "OrtopediaHumbertoSalazar"
       ],
       "imagenes": [
         "https://[PENDIENTE: dominio público]/instagram/borrador-002-corse.jpg"
       ],
-      "imagen_real": true,
-      "imagen_ilustrativa": false,
+      "imagen_real": false,
+      "imagen_ilustrativa": true,
       "idea_visual": "Foto real de un corsé terminado sobre fondo neutro, sin rostro de pacientes.",
-      "fecha_programada": null
+      "fecha_programada": "2026-11-29 20:00"
     },
     {
       "id": "borrador-003-plantillas",
       "estado": "borrador",
       "tipo": "IMAGEN",
-      "gancho": "Plantillas, férulas y calzado: todo a medida.",
-      "titulo": "Más que corsés",
-      "texto": "Además de corsés fabricamos plantillas, férulas para juanetes y calzado ortopédico. Escríbenos por WhatsApp y cotiza.",
+      "gancho": "¿Y si el calzado y las plantillas se hicieran para tus pies, no para el promedio?",
+      "titulo": "Plantillas, férulas y calzado: todo a medida",
+      "texto": "Además de corsés, fabricamos plantillas, férulas para juanetes y calzado ortopédico, siempre a medida.\n\nDetrás hay un taller familiar chileno con + de 40 años de experiencia.\n\n👉 Escríbenos por WhatsApp, dinos qué producto necesitas y te cotizamos.\n\nImagen ilustrativa.",
       "hashtags": [
         "PlantillasOrtopedicas",
         "CalzadoOrtopedico",
+        "Juanetes",
         "OrtopediaChile"
       ],
       "imagenes": [
         "https://[PENDIENTE: dominio público]/instagram/borrador-003-plantillas.jpg"
       ],
-      "imagen_real": true,
-      "imagen_ilustrativa": false,
+      "imagen_real": false,
+      "imagen_ilustrativa": true,
       "idea_visual": "Carrusel o collage con fotos reales de cada producto (pendiente de fotos).",
-      "fecha_programada": null
+      "fecha_programada": "2026-11-30 12:30"
     },
     {
       "id": "borrador-004-como-cotizar",
       "estado": "borrador",
       "tipo": "IMAGEN",
-      "gancho": "Cotizar es tan fácil como escribirnos.",
+      "gancho": "Cotizar un producto a medida es más simple de lo que imaginas.",
       "titulo": "Así cotizas por WhatsApp",
-      "texto": "1) Escríbenos por WhatsApp. 2) Cuéntanos qué producto necesitas. 3) Te respondemos con tu cotización. No compartas indicaciones médicas por mensaje hasta que te indiquemos cómo.",
+      "texto": "1️⃣ Escríbenos por WhatsApp.\n2️⃣ Cuéntanos qué producto necesitas.\n3️⃣ Recibe tu cotización.\n\nAsí de simple, con el respaldo de un taller familiar con + de 40 años de experiencia.\n\nPor tu privacidad, no envíes indicaciones médicas por mensaje hasta que te indiquemos cómo.\n\n👉 Guarda esta publicación y escríbenos cuando quieras.\n\nImagen ilustrativa.",
       "hashtags": [
         "Cotiza",
         "OrtopediaChile",
-        "WhatsAppBusiness"
+        "HechoAMedida",
+        "OrtopediaHumbertoSalazar"
       ],
       "imagenes": [
         "https://[PENDIENTE: dominio público]/instagram/borrador-004-como-cotizar.jpg"
       ],
-      "imagen_real": true,
-      "imagen_ilustrativa": false,
+      "imagen_real": false,
+      "imagen_ilustrativa": true,
       "idea_visual": "Gráfica simple en 3 pasos con colores de marca (azul tinta, verde WhatsApp, papel); diseño en Canva.",
-      "fecha_programada": null
+      "fecha_programada": "2026-12-01 20:00"
     }
   ]
 }

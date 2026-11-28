@@ -8,3 +8,4 @@ Actualizado: 28-nov-2026.
 - Falta (decisión): dónde corre el ejecutor, porque el entorno cloud no llega a graph.facebook.com.
 - Nada se ha publicado ni se ha llamado a Meta.
 - Borradores listos en `instagram/cola.json` (4 piezas, estado `borrador`), pendientes de tu aprobación, de fotos reales y de fecha. No incluyen número de WhatsApp (falta confirmarlo).
+- Captions persuasivos listos como borrador, con fechas propuestas (hora de Chile): sáb 28-nov 12:30, dom 29-nov 20:00, lun 30-nov 12:30, mar 1-dic 20:00. Ninguno está aprobado. Los diseños los rehace otro hilo con Moda.
