@@ -1,0 +1,19 @@
+{
+  "zona_horaria": "America/Santiago",
+  "piezas": [
+    {
+      "id": "ejemplo-001",
+      "estado": "borrador",
+      "tipo": "IMAGEN",
+      "gancho": "[EJEMPLO] ¿Sabías que cada corsé se fabrica a medida?",
+      "titulo": "Corsés ortopédicos a medida",
+      "texto": "Fabricamos corsés personalizados en nuestro taller familiar, con más de 40 años de trayectoria. Cotiza el tuyo por WhatsApp.",
+      "hashtags": ["OrtopediaChile", "CorsesOrtopedicos", "HechoAMedida"],
+      "imagenes": ["https://[PENDIENTE: dominio público]/instagram/ejemplo-001.jpg"],
+      "imagen_ilustrativa": false,
+      "imagen_real": true,
+      "idea_visual": "Foto real del taller con un corsé en proceso (Nicole entrega la foto).",
+      "fecha_programada": null
+    }
+  ]
+}
