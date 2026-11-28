@@ -12,12 +12,12 @@ de stock de Moda. Revisadas el 28-nov-2026.
 | Pieza | Foto | Fotógrafo | URL | Licencia |
 |---|---|---|---|---|
 | 1. Ortopedia a medida (portada) | Técnico con camisa blanca ajustando una órtesis azul en un banco de trabajo (sin rostro) | Tom Claes | https://unsplash.com/photos/fHLgSyPmFWA | Unsplash License |
-| 2. Corsés a medida | Sin foto: diseño tipográfico (no hay en los bancos libres una foto adecuada de un corsé sin personas) | — | — | — |
+| 2. Corsés a medida | Manos ajustando una órtesis blanca (3D) | Tom Claes | https://unsplash.com/photos/mqrc9Rm7PgU | Unsplash License |
 | 3. Plantillas, férulas, calzado | Par de plantillas sobre fondo neutro | Jean Woloszczyk | https://unsplash.com/photos/2tfa53ryFbY | Unsplash License |
 | 4. Cómo cotizar | Manos trazando un patrón de plantilla sobre cuero | Cohen Berg | https://unsplash.com/photos/GPdWubhjq-Q | Unsplash License |
 
 ## Notas
-- Pieza 2: se quitó la foto (era una órtesis de pierna, no un corsé). Se buscó en Unsplash (vía Moda) un corsé o faja lumbar sin rostros ni marcas y no hubo ninguno adecuado; queda tipográfica hasta tener una foto real.
+- Pieza 2: Nicole pidió (28-nov-2026) mantener esta foto, que es una órtesis de pierna y no un corsé. Se probó una versión tipográfica sin foto, pero se restituyó la foto. Se buscó en Unsplash (vía Moda) un corsé o faja lumbar sin personas ni marcas y no hubo ninguno adecuado.
 - Respaldo de los JPEG finales: carpeta "imagenes insta ortopedia" en el drive de Moda (pieza-1.jpg a pieza-4.jpg) junto con el lienzo.
 - Marca en Moda: "Ortopedia Humberto Salazar" (colores y tipografías de la identidad V5.1).
 - No se generaron imágenes con IA del producto.
