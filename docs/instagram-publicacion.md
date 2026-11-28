@@ -2,6 +2,24 @@
 
 Cuenta: @ortopedia.humbertosalazar (id 17841445590397589), vinculada a la página de Facebook 1502713056255317, portafolio 1814675739770277. App de Meta: "Ortopedia HS Mensajes" (id 1537213269465741).
 
+## 0. Programar una publicación nueva (procedimiento corto)
+1. Nicole le pide a Claude la pieza (tema o producto).
+2. Claude escribe el borrador en `instagram/cola.json` (gancho, texto, hashtags), diseña la imagen en Moda y exporta el JPEG (1080x1350).
+3. Claude pone en la pieza el enlace público del JPEG y valida con `python3 -I instagram/publicador.py validar`.
+4. Nicole responde **"aprobado"** con día y hora de Chile. Claude sella la aprobación y la sube a `main` con un PR.
+5. El workflow `.github/workflows/instagram.yml` corre cada 15 minutos y publica lo aprobado cuya hora ya llegó. Anota lo publicado en la rama `registro-publicaciones`. Nicole no hace nada más.
+- Si cambia el texto de una pieza ya aprobada, hay que aprobarla de nuevo.
+- Para publicar al instante: Actions > "Publicar en Instagram" > Run workflow con `publicar` = `true` (la pieza debe tener hora vencida).
+
+### Imágenes
+Hoy se usan los enlaces públicos de las exportaciones de Moda, que vencen el **28-nov-2027**. Meta copia la imagen al publicar, así que una publicación ya hecha no depende del enlace. Riesgo: si se borra el diseño en Moda antes de que la pieza salga, el enlace puede dejar de funcionar. Para algo más estable, subir los JPEG a un repositorio público de imágenes (hoy existe `ortopedia-hs-imagenes`, vacío) y usar sus enlaces `raw.githubusercontent.com`.
+
+### Renovar el token si caduca
+1. business.facebook.com > Configuración > Usuarios del sistema > `publicador-instagram` > **Generar token**.
+2. App "Ortopedia HS Mensajes"; permisos `instagram_basic`, `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`; caducidad "Nunca" si Meta la ofrece.
+3. Copiar el token y pegarlo en GitHub: repositorio > Settings > Secrets and variables > Actions > `IG_ACCESS_TOKEN` > Update secret. Nunca en el chat ni en archivos.
+- Si al generar el token se eligió una caducidad de 60 días, hay que repetirlo antes de la fecha. El workflow falla con un error visible si el token venció, sin publicar nada.
+
 ## 1. Qué exige Meta (a revisar con la documentación vigente al momento de conectar)
 - **Cuenta profesional** de Instagram (Empresa o Creador), vinculada a la página. Ya lo está.
 - **API usada:** Instagram API con Facebook Login (`graph.facebook.com`), porque la cuenta está ligada a una página.
@@ -13,7 +31,7 @@ Cuenta: @ortopedia.humbertosalazar (id 17841445590397589), vinculada a la págin
 - **Programación:** la API de Instagram no programa de forma nativa; por eso existe la cola propia (`instagram/cola.json`) y un ejecutor que publica lo aprobado cuando llega la fecha (hora de Chile).
 - **Entorno cloud:** bloquea `graph.facebook.com`. El ejecutor debe correr en el computador de Nicole o en un servicio que ella apruebe (por ejemplo GitHub Actions o el hosting del webhook). No se configuró ninguno.
 
-## 2. Qué debe hacer Nicole (clics y aceptaciones)
+## 2. Configuración inicial (hecha el 28-nov-2026; no hay que repetirla)
 1. En developers.facebook.com, app "Ortopedia HS Mensajes": agregar el producto **Instagram** y aceptar los términos que Meta muestre.
 2. Aceptar en las ventanas emergentes de Meta los permisos `instagram_content_publish` e `instagram_basic` (Claude no puede tocar esas ventanas).
 3. En Configuración del negocio > Usuarios del sistema: crear o reutilizar el usuario del sistema, asignarle la página y la cuenta de Instagram, y generar el token con esos permisos.
