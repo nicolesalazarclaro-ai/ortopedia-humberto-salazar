@@ -3,7 +3,7 @@
   "piezas": [
     {
       "id": "borrador-001-taller",
-      "estado": "borrador",
+      "estado": "aprobada",
       "tipo": "IMAGEN",
       "gancho": "Tu cuerpo trabaja contigo todo el día. ¿Lo que usas lo acompaña?",
       "titulo": "Apoyo y comodidad empiezan por la medida",
@@ -20,11 +20,14 @@
       "imagen_real": false,
       "imagen_ilustrativa": true,
       "idea_visual": "Foto real del taller o de las manos trabajando (la entrega Nicole). Sin pacientes.",
-      "fecha_programada": "2026-11-28 12:30"
+      "fecha_programada": "2026-11-28 12:30",
+      "aprobada_por": "Nicole",
+      "aprobada_en": "2026-11-28 03:16",
+      "aprobada_texto": "Tu cuerpo trabaja contigo todo el día. ¿Lo que usas lo acompaña?\n\nApoyo y comodidad empiezan por la medida\n\nPostura, apoyo y comodidad al caminar o al moverte no dependen de una talla estándar: dependen de cómo se adapta el producto a tu cuerpo.\n\nPor eso en nuestro taller familiar fabricamos a medida, siguiendo la indicación de tu médico, kinesiólogo o traumatólogo. Tenemos + de 40 años de experiencia.\n\nUn producto bien adaptado acompaña tu día a día; uno que no calza, se nota.\n\n👉 Escríbenos por WhatsApp y te atenderá un profesional.\n\nImagen ilustrativa.\n\nEsta publicación es informativa y no reemplaza la evaluación de un profesional de la salud.\n\n#OrtopediaChile #Postura #Bienestar #HechoAMedida"
     },
     {
       "id": "borrador-002-corse",
-      "estado": "borrador",
+      "estado": "aprobada",
       "tipo": "IMAGEN",
       "gancho": "Tu espalda no es una talla estándar. Entonces, ¿por qué tu corsé sí?",
       "titulo": "Corsés ortopédicos a medida",
@@ -41,11 +44,14 @@
       "imagen_real": false,
       "imagen_ilustrativa": true,
       "idea_visual": "Foto real de un corsé terminado sobre fondo neutro, sin rostro de pacientes.",
-      "fecha_programada": "2026-11-29 20:00"
+      "fecha_programada": "2026-11-29 20:00",
+      "aprobada_por": "Nicole",
+      "aprobada_en": "2026-11-28 03:16",
+      "aprobada_texto": "Tu espalda no es una talla estándar. Entonces, ¿por qué tu corsé sí?\n\nCorsés ortopédicos a medida\n\nUn corsé se usa muchas horas. Si no se adapta a tu cuerpo, puede apretar, moverse o resultar incómodo, y terminas sin usarlo.\n\nLa medida personalizada importa porque el apoyo y la comodidad dependen de cómo calza en ti.\n\nLo fabricamos a medida, siguiendo la indicación de tu médico, kinesiólogo o traumatólogo, con + de 40 años de experiencia en el taller.\n\n👉 Escríbenos por WhatsApp y te atenderá un profesional.\n\nImagen ilustrativa.\n\nEsta publicación es informativa y no reemplaza la evaluación de un profesional de la salud.\n\n#CorsesOrtopedicos #Postura #OrtopediaChile #HechoAMedida"
     },
     {
       "id": "borrador-003-plantillas",
-      "estado": "borrador",
+      "estado": "aprobada",
       "tipo": "IMAGEN",
       "gancho": "Caminas miles de pasos al día. ¿Tus pies tienen el apoyo que necesitan?",
       "titulo": "Plantillas y calzado ortopédico a medida",
@@ -62,11 +68,14 @@
       "imagen_real": false,
       "imagen_ilustrativa": true,
       "idea_visual": "Carrusel o collage con fotos reales de cada producto (pendiente de fotos).",
-      "fecha_programada": "2026-11-30 12:30"
+      "fecha_programada": "2026-11-30 12:30",
+      "aprobada_por": "Nicole",
+      "aprobada_en": "2026-11-28 03:16",
+      "aprobada_texto": "Caminas miles de pasos al día. ¿Tus pies tienen el apoyo que necesitan?\n\nPlantillas y calzado ortopédico a medida\n\nCada pie es distinto, y el apoyo que da una plantilla o un calzado depende de que se adapte al tuyo.\n\nUn producto de talla estándar se hace para un promedio. Uno a medida se adapta a ti y acompaña tu forma de caminar.\n\nFabricamos plantillas y calzado ortopédico a medida, siguiendo la indicación de tu profesional de la salud, con + de 40 años de experiencia.\n\n👉 Escríbenos por WhatsApp y te atenderá un profesional.\n\nImagen ilustrativa.\n\nEsta publicación es informativa y no reemplaza la evaluación de un profesional de la salud.\n\n#PlantillasOrtopedicas #CalzadoOrtopedico #Bienestar #OrtopediaChile"
     },
     {
       "id": "borrador-004-como-cotizar",
-      "estado": "borrador",
+      "estado": "aprobada",
       "tipo": "IMAGEN",
       "gancho": "Cuidar tu postura y tu comodidad parte por una buena indicación.",
       "titulo": "Primero tu profesional, después nosotros",
@@ -83,7 +92,10 @@
       "imagen_real": false,
       "imagen_ilustrativa": true,
       "idea_visual": "Gráfica simple en 3 pasos con colores de marca (azul tinta, verde WhatsApp, papel); diseño en Canva.",
-      "fecha_programada": "2026-12-01 20:00"
+      "fecha_programada": "2026-12-01 20:00",
+      "aprobada_por": "Nicole",
+      "aprobada_en": "2026-11-28 03:16",
+      "aprobada_texto": "Cuidar tu postura y tu comodidad parte por una buena indicación.\n\nPrimero tu profesional, después nosotros\n\nTodo producto ortopédico a medida parte por la indicación de tu médico, kinesiólogo o traumatólogo. Nosotros lo fabricamos siguiendo esa indicación.\n\nCotizar es simple:\n1️⃣ Escríbenos por WhatsApp.\n2️⃣ Cuéntanos qué producto buscas.\n3️⃣ Te atiende un profesional y te enviamos tu cotización.\n\nTaller familiar chileno con + de 40 años de experiencia.\n\nPor tu privacidad, no envíes indicaciones médicas por mensaje hasta que te indiquemos cómo.\n\n👉 Guarda esta publicación y escríbenos cuando quieras.\n\nImagen ilustrativa.\n\nEsta publicación es informativa y no reemplaza la evaluación de un profesional de la salud.\n\n#Cotiza #OrtopediaChile #Postura #HechoAMedida"
     }
   ]
 }
